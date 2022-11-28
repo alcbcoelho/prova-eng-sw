@@ -33,3 +33,7 @@ function listar() {
 function listar_por_categoria(categoria) {
     console.log(produtos.filter(p => p.categoria === categoria));
 }
+
+function listar_por_valor(valor_minimo, valor_maximo) {
+    console.log(produtos.filter(p => p.valor >= valor_minimo && p.valor <= valor_maximo));
+}
